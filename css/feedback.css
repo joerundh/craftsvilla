@@ -1,0 +1,63 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+#name-input {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    box-shadow: 2px 2px 0px var(--light-grey);
+    outline: none;
+    border: 1px solid black;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    font-family: "Krub Light";
+    width: 180px;
+}
+
+#message-input {
+    width: 500px;
+    height: 150px;
+    font-size: 0.8em;
+    font-family: "Krub Light";
+    resize: none;
+    outline: none;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 0px var(--light-grey);
+}
+
+main div {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    width: 160px;
+    height: 30px;
+    background: var(--light-blue);
+    border: none;
+    color: var(--white);
+    font-family: "Krub Light";
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px var(--light-grey);
+}
+
+main a {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--light-blue);
+    text-decoration: none;
+    text-shadow: 2px 2px 0px var(--light-grey);
+    margin: 0 auto;
+}

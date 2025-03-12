@@ -1,0 +1,38 @@
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#photoreel {
+    width: fit-content;
+    height: fit-content;
+}
+
+#photoreel-img {
+    width: 500px;
+    height: 375px;
+    display: inline-block;
+}
+
+#welcome {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#welcome p {
+    margin: 0;
+}
+
+#welcome a {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--light-blue);
+    text-decoration: none;
+    text-shadow: 2px 2px 0px var(--light-grey);
+}

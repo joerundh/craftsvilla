@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Krub Light";
+    src: url("./fonts/Krub-Light.ttf");
+}
+
+@font-face {
+    font-family: "Krub Bold";
+    src: url("./fonts/Krub-Bold.ttf");
+}
+
+:root {
+    --content-width: 800px;
+    --banner-height: 80px;
+    --navbar-height: 40px;
+    --header-height: calc(var(--banner-height) + var(--navbar-height));
+    --vmargins: 5px;
+    --white: white;
+    --lighter-grey: #F0F0F0;
+    --light-grey: #D8D8D8;
+    --grey: grey;
+    --light-blue: #4697D2;
+    --dark-blue: #266B9D;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background-color: var(--lighter-grey);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), var(--lighter-grey)), url("./images/background.jpg");
+    background-position: top center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+#content {
+    box-shadow: 5px 5px 5px var(--grey);
+    background-color: var(--white);
+    margin: var(--vmargins) 0px;
+}
+
+header {
+    width: var(--content-width);
+    /*
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    */
+}
+
+header #banner {
+    width: var(--content-width);
+    height: var(--banner-height);
+    background-image: url("./images/top.svg");
+    background-size: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+header #navbar {
+    width: var(--content-width);
+    height: var(--navbar-height);
+    background-color: var(--light-blue);
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    flex: auto;
+}
+
+header #navbar a {
+    color: var(--white);
+    text-decoration: none;
+    display: flex;
+    font-family: "Krub Light";
+    font-size: 0.8em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 0px;
+    text-shadow: 1px 1px 0px var(--dark-blue);
+}
+
+header #navbar a:hover {
+    font-weight: bold;
+    text-shadow: 2px 2px 0px var(--dark-blue);
+}
+
+main {
+    width: var(--content-width);
+    padding: 20px;
+    font-family: "Krub Light";
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--light-blue);
+    text-shadow: 1px 1px 0px var(--light-grey);
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--light-blue);
+    text-shadow: 1px 1px 0px var(--light-grey);
+    width: 100%;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--light-blue);
+    text-shadow: 1px 1px 0px var(--white);
+}

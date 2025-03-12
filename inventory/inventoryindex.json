@@ -1,0 +1,35 @@
+[
+    {
+        "name":    "Mosaikksett",
+        "content":  [
+            "Ramme",
+            "A4-størrelse treplate",
+            "små fargede steiner",
+            "gummi"
+        ],
+        "price":    "400",
+        "feature":  "mosaic_thumb.jpg"
+    },
+    {
+        "name":    "Akvarellsett",
+        "content":  [
+            "Ramme",
+            "akvarellpapir med designmal",
+            "akvarellfarger",
+            "pensler"
+        ],
+        "price":    "200",
+        "feature":  "watercolor_thumb.jpg"
+    },
+    {
+        "name":    "Akvarellsett",
+        "content":  [
+            "Ramme",
+            "akrylpapir med designmal",
+            "akrylfarger",
+            "pensler"
+        ],
+        "price":    "300",
+        "feature":  "acrylic_thumb.jpg"
+    }
+]
