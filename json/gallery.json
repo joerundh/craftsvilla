@@ -1,0 +1,38 @@
+[
+    {
+        "title":        "Mosaikk 1",
+        "artist":       "Ukjent",
+        "filename":     "images/gallery/mosaic01.jpg",
+        "thumbnail":    "images/gallery/thumbnails/mosaic01_thumb.jpg"
+    },
+    {
+        "title":        "Akvarell 1",
+        "artist":       "Ukjent",
+        "filename":     "images/gallery/watercolor01.jpg",
+        "thumbnail":    "images/gallery/thumbnails/watercolor01_thumb.jpg"
+    },
+    {
+        "title":        "Lakryl 1",
+        "artist":       "Ukjent",
+        "filename":     "images/gallery/acrylic01.jpg",
+        "thumbnail":    "images/gallery/thumbnails/acrylic01_thumb.jpg"
+    },
+    {
+        "title":        "Lakryl 2",
+        "artist":       "Ukjent",
+        "filename":     "images/gallery/acrylic02.jpg",
+        "thumbnail":    "images/gallery/thumbnails/acrylic02_thumb.jpg"
+    },
+    {
+        "title":        "Akvarell 2",
+        "artist":       "Ukjent",
+        "filename":     "images/gallery/watercolor02.jpg",
+        "thumbnail":    "images/gallery/thumbnails/watercolor02_thumb.jpg"
+    },
+    {
+        "title":        "Moasikk 2",
+        "artist":       "Ukjent",
+        "filename":     "images/gallery/mosaic02.jpg",
+        "thumbnail":    "images/gallery/thumbnails/mosaic02_thumb.jpg"
+    }
+]

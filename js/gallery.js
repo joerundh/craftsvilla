@@ -7,7 +7,9 @@ gallery.appendChild(loadMessage);
 let entries;
 let viewing = -1;
 
-fetch("../images/gallery/galleryindex.json")
+let rootPath = window.location.href.slice(0, window.location.href.lastIndexOf("/"));
+
+fetch(`${rootPath}/json/gallery.json`)
     .then(response => response.json())
     .then(data => {
         gallery.removeChild(loadMessage);
@@ -16,7 +18,7 @@ fetch("../images/gallery/galleryindex.json")
             entry.className = "gallery-entry";
 
             let pic = document.createElement("img");
-            pic.src = `../images/gallery/${obj.filename}`;
+            pic.src = `${rootPath}/${obj.thumbnail}`;
             entry.append(pic);
 
             pic.addEventListener("click", event => {
@@ -29,7 +31,7 @@ fetch("../images/gallery/galleryindex.json")
                 preview.className = "preview";
                 
                 let img = document.createElement("img");
-                img.src = `../images/gallery/${obj.filename}`;
+                img.src = `${rootPath}/${obj.filename}`;
 
                 let footer = document.createElement("div");
                 footer.className = "footer";
@@ -61,13 +63,13 @@ fetch("../images/gallery/galleryindex.json")
                 let jumpLeft = (event) => {
                     viewing = viewing === 0 ? arr.length - 1 : viewing - 1;
                     let prevObj = arr[viewing];
-                    img.src = `../images/gallery/${prevObj.filename}`;
+                    img.src = `${rootPath}/${prevObj.filename}`;
                     description.innerHTML = `${prevObj.artist}: <i>${prevObj.title}</i>`;
                 }
                 let jumpRight = (event) => {
                     viewing = viewing === arr.length - 1 ? 0 : viewing + 1;
                     let prevObj = arr[viewing];
-                    img.src = `../images/gallery/${prevObj.filename}`;
+                    img.src = `${rootPath}/${prevObj.filename}`;
                     description.innerHTML = `${prevObj.artist}: <i>${prevObj.title}</i>`;
                 };
                 let keyPressed = event => {

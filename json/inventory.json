@@ -8,7 +8,7 @@
             "gummi"
         ],
         "price":    "400",
-        "feature":  "mosaic_thumb.jpg"
+        "feature":  "images/inventory/mosaic_thumb.jpg"
     },
     {
         "name":    "Akvarellsett",
@@ -19,7 +19,7 @@
             "pensler"
         ],
         "price":    "200",
-        "feature":  "watercolor_thumb.jpg"
+        "feature":  "images/inventory/watercolor_thumb.jpg"
     },
     {
         "name":    "Akvarellsett",
@@ -30,6 +30,6 @@
             "pensler"
         ],
         "price":    "300",
-        "feature":  "acrylic_thumb.jpg"
+        "feature":  "images/inventory/acrylic_thumb.jpg"
     }
 ]
