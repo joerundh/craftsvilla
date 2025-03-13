@@ -40,5 +40,8 @@ fetch("../inventory/inventoryindex.json")
         });
     })
     .catch(error => {
-        console.log(error);
+        let msg = document.createElement("p");
+        console.log(error)
+        msg.innerText = "(Intet utstyr funnet)";
+        gallery.append(msg);
     })
