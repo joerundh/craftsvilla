@@ -42,5 +42,5 @@ fetch("../inventory/inventoryindex.json")
     .catch(error => {
         let msg = document.createElement("p");
         msg.innerText = "(Intet utstyr funnet)";
-        gallery.append(msg);
+        list.append(msg);
     })
